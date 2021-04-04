@@ -1,3 +1,5 @@
+/*https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=flex-start
+https://www.w3schools.com/cssref/css3_pr_align-items.asp*/
 * {
     padding: 0;
     margin: 0;
@@ -6,15 +8,16 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+/*Resetando os estilos para evitar conflito*/
 
 body{
     width: 100%;
-    min-height: 625px;
+    min-height: 625px; /* altura mínima */
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* jogar conteúdo no centro */
 }
 
 .instagram-wrapper{
@@ -24,6 +27,10 @@ body{
     width: 60%;
     height: 625px;
 }
+/* deixa o celular e login no meio da tela */
+/* display flex = conteiner que todos os itens dentro dele ficaram em linha ocupando o maior espaço; alinhar tudo em linha ocupando o espaço que eles necessitam dentro do conteiner */
+/* align-items center = alinhamento vertical vai ficar no centro */
+/* justify-content start = alinhamento honrizontal vai ficar no centro * - start = começar da esquerda pra direita */
 
 .instagram-cel{
     display: flex;
